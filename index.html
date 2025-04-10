@@ -1,26 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>GotIt</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  </head>
-  <body class="bg-white text-gray-900">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>gotit</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1e1e2f;
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
 
-    <!-- Header -->
-    <header class="bg-purple-700 text-white p-6 shadow-md sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto flex justify-between items-center">
-        <h1 class="text-3xl font-bold">GotIt</h1>
-        <nav class="space-x-4">
-          <a href="#about" class="hover:underline">About</a>
-          <a href="#what-is-gotit" class="hover:underline">What Is GotIt</a>
-        </nav>
-      </div>
-    </header>
+    #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.6s ease;
+      flex-direction: column;
+    }
 
-    <!-- Hero -->
-    <section class="text-center py-20 bg-purple-100">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Don't worry, Kriti got it.</h2>
-      <p class="text-xl mb-6">Welcome to my world of coding... get everything here.</p>
-      <a href="#what-is-gotit" class="bg-purple-700 hover:bg-purple-800 text-white px-6 py-3 rounded-full text
+    #loader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loader-text {
+      font-size: 2rem;
+      font-weight: bold;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.8; }
+    }
+
+    header {
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(to right, #ff00cc, #3333ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-text">💜 gotit is loading... 💫</div>
+  </div>
+
+  <!-- Main Content -->
+  <header>
+    <h1>Don't worry, Kriti got it.</h1>
+    <p>Welcome to my world of coding... get everything here.</p>
+  </header>
+
+  <footer>
+    Made with 💻 by Kriti | gotit
+  </footer>
+
+  <script>
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loader");
+      loader.classList.add("fade-out");
+    });
+  </script>
+
+</body>
+</html>
