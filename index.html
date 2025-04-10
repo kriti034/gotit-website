@@ -3,86 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GotIt - The Future is Yours</title>
+  <title>Don't worry, Kriti got it...</title>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
       color: white;
       overflow-x: hidden;
     }
     header {
-      padding: 100px 20px;
       text-align: center;
+      padding: 60px 20px;
     }
     h1 {
       font-size: 3rem;
-      margin-bottom: 10px;
-      animation: fadeIn 2s ease forwards;
-      opacity: 0;
+      animation: fadeIn 2s ease-in-out;
     }
     p {
       font-size: 1.2rem;
-      color: #ddd;
-      max-width: 600px;
-      margin: 0 auto;
-      animation: fadeIn 2.5s ease forwards;
-      opacity: 0;
-    }
-    .btn {
-      margin-top: 30px;
-      padding: 12px 25px;
-      font-size: 1rem;
-      border: none;
-      background-color: #00ffcc;
-      color: #000;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 15px #00ffcc;
-    }
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
+      margin-top: 10px;
     }
     section {
-      padding: 50px 20px;
-      text-align: center;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid white;
+      padding-bottom: 10px;
+    }
+    .section-box {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
     }
     footer {
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.05);
       text-align: center;
+      padding: 20px;
       font-size: 0.9rem;
+      background: rgba(255, 255, 255, 0.05);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1 class="fade-in">Welcome to GotIt</h1>
-    <p class="fade-in">A brand for every dreamer, doer, and believer. We're building the future together.</p>
-    <button class="btn">Join the Movement</button>
+    <h1>Welcome to my world of coding</h1>
+    <p>Get everything here...</p>
   </header>
 
-  <section data-aos="fade-up">
-    <h2>Why GotIt?</h2>
-    <p>Because everyone deserves to be seen, heard, and empowered. GotIt is not just a name—it's a revolution.</p>
+  <section>
+    <h2>About Me</h2>
+    <div class="section-box">
+      <p>Hey there! I'm Kriti, a future IITian and passionate coder on a mission to crack JEE with style and determination. This is my little web corner where I share everything awesome ✨</p>
+    </div>
   </section>
 
-  <section data-aos="zoom-in">
-    <h2>Coming Soon</h2>
-    <p>We're launching soon with products, stories, and opportunities for the world.</p>
+  <section>
+    <h2>Projects & Notes</h2>
+    <div class="section-box">
+      <p>Coming soon: Class 11 & 12 cheat sheets, code snippets, and revision tools!</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>My JEE Journey</h2>
+    <div class="section-box">
+      <p>From backlogs to breakthroughs — tracking my journey to IIT Delhi CS. Mock scores, improvement logs, and motivational highs & lows.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact & Socials</h2>
+    <div class="section-box">
+      <p><strong>YouTube:</strong> <a href="#" style="color:#fff;">[Coming Soon]</a></p>
+      <p><strong>Telegram:</strong> <a href="#" style="color:#fff;">[Join the Tribe]</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/kriti034" style="color:#fff;">@kriti034</a></p>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 GotIt. All rights reserved.
+    Made with 💜 by Kriti | Don’t worry, Kriti got it!
   </footer>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
