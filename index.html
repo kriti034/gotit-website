@@ -2,92 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GotIt - The Future is Yours</title>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GotIt</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1e1e2f;
       color: white;
-      overflow-x: hidden;
+    }
+    .loader {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #1e1e2f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .loader span {
+      font-size: 24px;
+      animation: fade 1s infinite alternate;
+    }
+    @keyframes fade {
+      from { opacity: 0.2; }
+      to { opacity: 1; }
     }
     header {
-      padding: 100px 20px;
+      background: #6a0dad;
+      padding: 20px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 40px 20px;
       text-align: center;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      animation: fadeIn 2s ease forwards;
-      opacity: 0;
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #e0b3ff;
     }
-    p {
-      font-size: 1.2rem;
-      color: #ddd;
-      max-width: 600px;
-      margin: 0 auto;
-      animation: fadeIn 2.5s ease forwards;
-      opacity: 0;
-    }
-    .btn {
-      margin-top: 30px;
-      padding: 12px 25px;
-      font-size: 1rem;
-      border: none;
-      background-color: #00ffcc;
-      color: #000;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 15px #00ffcc;
-    }
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: auto;
     }
     section {
-      padding: 50px 20px;
-      text-align: center;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #d9afff;
     }
     footer {
+      background: #6a0dad;
       padding: 20px;
-      background-color: rgba(255, 255, 255, 0.05);
       text-align: center;
-      font-size: 0.9rem;
     }
   </style>
+  <script>
+    window.addEventListener('load', () => {
+      document.querySelector('.loader').style.display = 'none';
+    });
+  </script>
 </head>
 <body>
-  <header>
-    <h1 class="fade-in">Welcome to GotIt</h1>
-    <p class="fade-in">A brand for every dreamer, doer, and believer. We're building the future together.</p>
-    <button class="btn">Join the Movement</button>
-  </header>
+  <div class="loader"><span>Loading GotIt...</span></div>
 
-  <section data-aos="fade-up">
-    <h2>Why GotIt?</h2>
-    <p>Because everyone deserves to be seen, heard, and empowered. GotIt is not just a name—it's a revolution.</p>
+  <header>GotIt</header>
+
+  <div class="hero">
+    <h1>Don't worry, Kriti GotIt.</h1>
+    <p>Welcome to the world of innovation, where everything you imagine, you GotIt.</p>
+  </div>
+
+  <section>
+    <h2>What is GotIt?</h2>
+    <p>GotIt is a global platform where artificial intelligence meets powerful e-commerce. It's not just a website — it's a revolution. Whether you're searching, shopping, learning, or building — GotIt is your go-to place. For everyone. Everywhere.</p>
   </section>
 
-  <section data-aos="zoom-in">
-    <h2>Coming Soon</h2>
-    <p>We're launching soon with products, stories, and opportunities for the world.</p>
+  <section>
+    <h2>About GotIt</h2>
+    <p>GotIt is built with a dream to connect people with technology in the most effortless way. It's a digital home for curiosity, discovery, and everyday convenience. Powered by futuristic AI, GotIt is built to serve every human being — uniquely, powerfully, beautifully.</p>
   </section>
 
   <footer>
-    &copy; 2025 GotIt. All rights reserved.
+    © 2025 GotIt. All rights reserved.
   </footer>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>
