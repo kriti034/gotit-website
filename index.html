@@ -1,102 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>gotit</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #1e1e2f;
-      color: white;
-      text-align: center;
-      overflow-x: hidden;
-    }
-
-    #loader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      transition: opacity 0.6s ease;
-      flex-direction: column;
-    }
-
-    #loader.fade-out {
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    .loader-text {
-      font-size: 2rem;
-      font-weight: bold;
-      animation: pulse 1.5s infinite ease-in-out;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 0.8; }
-      50% { transform: scale(1.1); opacity: 1; }
-      100% { transform: scale(1); opacity: 0.8; }
-    }
-
-    header {
-      margin-top: 100px;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      background: linear-gradient(to right, #ff00cc, #3333ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    p {
-      font-size: 1.2rem;
-      color: #ccc;
-      max-width: 600px;
-      margin: auto;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 20px;
-      width: 100%;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Loading Screen -->
-  <div id="loader">
-    <div class="loader-text">💜 gotit is loading... 💫</div>
+<section class="py-12 bg-white text-gray-800" id="about">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-6 text-purple-700">About GotIt</h2>
+    <p class="text-lg leading-relaxed">
+      GotIt is a revolutionary digital platform that blends AI, e-commerce, self-expression, and community into one powerful experience. Whether you're a student, a creator, a dreamer, or a doer — GotIt gives you a space to grow, shop, sell, connect, and shine.
+    </p>
+    <p class="mt-4 text-lg leading-relaxed">
+      With its sleek design and powerful tools, GotIt lets users explore, learn, and express themselves like never before. It’s not just a website — it’s a movement, a lifestyle, and a brand the world will never forget.
+    </p>
   </div>
+</section>
 
-  <!-- Main Content -->
-  <header>
-    <h1>Don't worry, Kriti got it.</h1>
-    <p>Welcome to my world of coding... get everything here.</p>
-  </header>
+<section class="py-12 bg-purple-100 text-gray-800" id="what-is-gotit">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-10 text-purple-700">WHAT IS GOTIT?</h2>
+    <div class="grid md:grid-cols-2 gap-8">
 
-  <footer>
-    Made with 💻 by Kriti | gotit
-  </footer>
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <h3 class="text-2xl font-semibold mb-3">💬 Chat with GotIt AI</h3>
+        <p>Your personal assistant. Study help, life tips, motivation, or just fun convos. Like ChatGPT — but yours.</p>
+      </div>
 
-  <script>
-    window.addEventListener("load", () => {
-      const loader = document.getElementById("loader");
-      loader.classList.add("fade-out");
-    });
-  </script>
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <h3 class="text-2xl font-semibold mb-3">🛍️ Explore Unique Products</h3>
+        <p>Discover digital notes, templates, designs, AI tools, cool merch, and more — from creators, for everyone.</p>
+      </div>
 
-</body>
-</html>
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <h3 class="text-2xl font-semibold mb-3">🧠 Learn & Build</h3>
+        <p>Use free resources to learn coding, content creation, design, and startup skills. Create and sell your digital goods too!</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <h3 class="text-2xl font-semibold mb
