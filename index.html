@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GotIt - The Future is Yours</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 100px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      animation: fadeIn 2s ease forwards;
+      opacity: 0;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #ddd;
+      max-width: 600px;
+      margin: 0 auto;
+      animation: fadeIn 2.5s ease forwards;
+      opacity: 0;
+    }
+    .btn {
+      margin-top: 30px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      background-color: #00ffcc;
+      color: #000;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #00ffcc;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    footer {
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="fade-in">Welcome to GotIt</h1>
+    <p class="fade-in">A brand for every dreamer, doer, and believer. We're building the future together.</p>
+    <button class="btn">Join the Movement</button>
+  </header>
+
+  <section data-aos="fade-up">
+    <h2>Why GotIt?</h2>
+    <p>Because everyone deserves to be seen, heard, and empowered. GotIt is not just a name—it's a revolution.</p>
+  </section>
+
+  <section data-aos="zoom-in">
+    <h2>Coming Soon</h2>
+    <p>We're launching soon with products, stories, and opportunities for the world.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 GotIt. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
